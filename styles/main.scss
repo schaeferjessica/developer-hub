@@ -40,6 +40,11 @@
   margin-top: 3.5rem;
 }
 
+.button:hover,
+.button:focus {
+  transform: rotate(-4deg) scale(1.02);
+}
+
 .button-text-regular {
   font-weight: 400;
   font-style: normal;
