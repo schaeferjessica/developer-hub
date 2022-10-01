@@ -16,7 +16,7 @@
       </nav>
     </header>
 
-    <aside class="grid__asite">
+    <aside class="grid__aside">
       <div class="references">
         <h2>References:</h2>
         <ul>
@@ -56,3 +56,9 @@
     </main>
   </div>
 </template>
+
+<script>
+  export default {
+    // page properties go here
+  }
+</script>
