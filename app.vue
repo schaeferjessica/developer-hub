@@ -1,9 +1,15 @@
 <template>
   <div class="grid">
     <header class="grid__header">
-      <p>Hello, we are freelance web-developer 
-        <a href="">↳ Nat Kosakul</a> &
-        <a href="">↳ Jessica Schäfer</a>
+      <p class="intro">Hello, we are freelance web-developer<br>
+        <a href="https://www.linkedin.com/in/nkosakul/">
+          <span>↳ </span>
+          <span>Nat Kosakul</span>
+        </a> &
+        <a href="https://www.linkedin.com/in/jessicaschafer/">
+          <span>↳ </span>
+          <span>Jessica Schäfer</span>
+        </a>
       </p>
 
       <nav class="language-switch">
@@ -20,38 +26,64 @@
       <div class="references">
         <h2>References:</h2>
         <ul>
-          <li><a href="#">↳ Al Halqa</a></li>
-          <li><a href="#">↳ Feinkost Umbria</a></li>
-          <li><a href="#">↳ Biscotti</a></li>
+          <li>
+            <a href="#">
+              <span>↳ </span>
+              <span>Al Halqa</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://ristorante-umbria.de/">
+              <span>↳ </span>
+              <span>Feinkost Umbria</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://biscotti.netlify.app/">
+              <span>↳ </span>
+              <span>Biscotti</span>
+            </a>
+          </li>
         </ul>
       </div>
       
       <div class="contact">
         <h2>Contact:</h2>
-        <a href="#">↳ developerhub@protonmail.com</a>
+        <a href="mailto:developerhub@protonmail.com" class="contact__mail">
+          <span>developerhub@protonmail.com</span>
+        </a>
       </div>
 
       <div class="imprint">
         <h2>Imprint:</h2>
-        <address>
-          <a href="mailto:developerhub@protonmail.com">mail: developerhub@protonmail.com</a><br>
-          <a href="tel:+176 22622962">phone: 0176 22622962</a>
+        <address class="address">
+          <a href="mailto:developerhub@protonmail.com" class="address__link">
+            <span>mail: developerhub@protonmail.com</span>
+          </a>
+          <a href="tel:+176 22622962" class="address__link">
+            <span>phone: 0176 22622962</span>
+          </a>
         </address>
-        <span>USt-IdNr.: DE253194968</span>
-        <p>Responsible for programming and journalistic-editorial content according to § 55 RStV developer:hub, Zepplinstrasse 13A, 97074 Würzburg</p>
+        <span class="imprint__text">USt-IdNr.: DE253194968</span>
+        <p class="imprint__text">Responsible for programming and journalistic-editorial content according to § 55 RStV developer:hub, Zepplinstrasse 13A, 97074 Würzburg</p>
       </div>
     </aside>
 
     <main class="grid__main">
-      <span>Web-Design & Web-Development</span>
-      <header>
-        <h1>we design & program websites</h1>
-        <p>Let's work together today to create an awesome website for your business.</p>
-      </header>
-      <a href="#">Get in touch</a>
+      <div class="main__context">
+        <span class="tagline">Web-Design & Web-Development</span>
+        <header>
+          <h1 class="title">we design & program websites</h1>
+          <p class="text">Let's work together today to create an awesome website for your business.</p>
+        </header>
+        <a href="#" class="button">
+          <span class="button-text-regular">Get in </span>
+          <span class="button-text-thin">touch</span>
+        </a>
+      </div>
 
       <footer>
-        <small>© 2022 developer:hub</small>
+        <small class="copyright">© 2022 developer:hub</small>
       </footer>
     </main>
   </div>

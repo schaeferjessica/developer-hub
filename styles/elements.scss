@@ -15,13 +15,24 @@ body {
   margin: 0;
   padding: 0;
   max-width: 1920px;
+  hyphens: auto;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 a {
   color: var(--color-text);
   text-decoration: none;
-  transition: color 0.2s ease-in-out;
+  transition: all 1s ease-in-out;
   font-style: italic;
+}
+
+a:hover span,
+a:focus span,
+a:hover abbr,
+a:focus abbr {
+  color: var(--color-primary);
+  transform: translateY(2rem);
 }
 
 [aria-current] {
