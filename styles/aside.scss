@@ -1,5 +1,9 @@
 .grid__aside {
-  padding: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-right: 4rem;
+  padding-left: 2rem;
+  overflow: scroll;
 }
 
 .contact,
@@ -18,5 +22,10 @@
 }
 
 .imprint__text {
+  margin-top: 1rem;
   font-size: 1rem;
+}
+
+.arrow {
+  font-size: 1.5rem;
 }

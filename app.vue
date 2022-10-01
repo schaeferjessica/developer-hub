@@ -2,12 +2,12 @@
   <div class="grid">
     <header class="grid__header">
       <p class="intro">Hello, we are freelance web-developer<br>
-        <a href="https://www.linkedin.com/in/nkosakul/">
-          <span>↳ </span>
+        <a href="https://www.linkedin.com/in/nkosakul/" target="_blank">
+          <span class="arrow">↳ </span>
           <span>Nat Kosakul</span>
         </a> &
-        <a href="https://www.linkedin.com/in/jessicaschafer/">
-          <span>↳ </span>
+        <a href="https://www.linkedin.com/in/jessicaschafer/" target="_blank">
+          <span class="arrow">↳ </span>
           <span>Jessica Schäfer</span>
         </a>
       </p>
@@ -27,20 +27,20 @@
         <h2>References:</h2>
         <ul>
           <li>
-            <a href="#">
-              <span>↳ </span>
+            <a href="#" target="_blank">
+              <span class="arrow">↳ </span>
               <span>Al Halqa</span>
             </a>
           </li>
           <li>
-            <a href="https://ristorante-umbria.de/">
-              <span>↳ </span>
+            <a href="https://ristorante-umbria.de/" target="_blank">
+              <span class="arrow">↳ </span>
               <span>Feinkost Umbria</span>
             </a>
           </li>
           <li>
-            <a href="https://biscotti.netlify.app/">
-              <span>↳ </span>
+            <a href="https://biscotti.netlify.app/" target="_blank">
+              <span class="arrow">↳ </span>
               <span>Biscotti</span>
             </a>
           </li>
@@ -64,8 +64,7 @@
             <span>phone: 0176 22622962</span>
           </a>
         </address>
-        <span class="imprint__text">USt-IdNr.: DE253194968</span>
-        <p class="imprint__text">Responsible for programming and journalistic-editorial content according to § 55 RStV developer:hub, Zepplinstrasse 13A, 97074 Würzburg</p>
+        <p class="imprint__text">Responsible for programming and journalistic-editorial content according to § 55 RStV developer:hub, USt-IdNr.: DE253194968 Zepplinstrasse 13A, 97074 Würzburg</p>
       </div>
     </aside>
 
