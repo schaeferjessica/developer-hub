@@ -3,12 +3,12 @@
     <header class="grid__header">
       <p class="intro">Hello, we are freelance web-developer<br>
         <a href="https://www.linkedin.com/in/nkosakul/" target="_blank">
-          <span class="arrow">↳ </span>
           <span>Nat Kosakul</span>
+          <span class="arrow"> ↳</span>
         </a> &
         <a href="https://www.linkedin.com/in/jessicaschafer/" target="_blank">
-          <span class="arrow">↳ </span>
           <span>Jessica Schäfer</span>
+          <span class="arrow"> ↳</span>
         </a>
       </p>
 
@@ -51,6 +51,7 @@
         <h2>Contact:</h2>
         <a href="mailto:developerhub@protonmail.com" class="contact__mail">
           <span>developerhub@protonmail.com</span>
+          <span class="arrow"> ↳</span>
         </a>
       </div>
 

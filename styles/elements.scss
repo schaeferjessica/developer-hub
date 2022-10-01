@@ -23,7 +23,7 @@ body {
 a {
   color: var(--color-text);
   text-decoration: none;
-  transition: all 1s ease-in-out;
+  transition: all 0.4s ease-in-out;
   font-style: italic;
 }
 
@@ -31,13 +31,16 @@ a:visited {
   color: var(--color-text);
 }
 
-a:hover span,
-a:focus span,
-a:hover abbr,
-a:focus abbr {
+a:hover,
+a:focus {
   color: var(--color-primary);
-  transform: translateY(2rem);
 }
+
+a:hover .arrow,
+a:focus .arrow {
+  transform: translateY(0.2rem);
+}
+
 
 [aria-current] {
   font-style: normal;
@@ -70,7 +73,6 @@ h1 {
   line-height: 1.2;
   margin: 0;
   padding: 0;
-  //color: var(--color-primary);
   background: linear-gradient(90deg, rgba(133, 148, 255, 0.8) 13.82%, rgba(193, 128, 80, 0.72) 80.95%);
   background-clip: text;
   -webkit-background-clip: text;
