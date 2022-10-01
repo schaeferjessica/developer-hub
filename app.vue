@@ -28,14 +28,14 @@
       
       <div class="contact">
         <h2>Contact:</h2>
-        <a href="#">↳ developer:hub.proton.me</a>
+        <a href="#">↳ developerhub@protonmail.com</a>
       </div>
 
       <div class="imprint">
         <h2>Imprint:</h2>
         <address>
-          <a href="mailto:developer:hub.proton.me">developer:hub.proton.me</a>
-          <a href="tel:+176 22622962">0176 22622962</a>
+          <a href="mailto:developerhub@protonmail.com">mail: developerhub@protonmail.com</a><br>
+          <a href="tel:+176 22622962">phone: 0176 22622962</a>
         </address>
         <span>USt-IdNr.: DE253194968</span>
         <p>Responsible for programming and journalistic-editorial content according to § 55 RStV developer:hub, Zepplinstrasse 13A, 97074 Würzburg</p>

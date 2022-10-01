@@ -1,7 +1,71 @@
+:root {
+  --color-primary: #8594FF;
+  --color-secondary: #C18050;
+  --color-text: #313942;
+  --color-background: #F9F7F6;
+}
+
 body {
   font-family: 'IBM Plex Sans', 'Roboto', sans-serif;
   font-weight: 300;
-  font-size: 1.2rem;
+  font-size: 2.0rem;
   line-height: 1.5;
-  color: #313942;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  margin: 0;
+  padding: 0;
+  max-width: 1920px;
+}
+
+a {
+  color: var(--color-text);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+  font-style: italic;
+}
+
+[aria-current] {
+  font-style: normal;
+  font-weight: 400;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+abbr {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 5.0rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+  //color: var(--color-primary);
+  background: linear-gradient(90deg, rgba(133, 148, 255, 0.8) 13.82%, rgba(193, 128, 80, 0.72) 80.95%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+h2 {
+  font-size: 2.0rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
 }
