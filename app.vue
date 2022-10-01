@@ -49,10 +49,20 @@
       
       <div class="contact">
         <h2>Contact:</h2>
-        <a href="mailto:developerhub@protonmail.com" class="contact__mail">
-          <span>developerhub@protonmail.com</span>
-          <span class="arrow"> ↳</span>
-        </a>
+        <ul>
+          <li>
+            <a href="mailto:developerhub@protonmail.com" class="contact__mail">
+              <span class="arrow">↳ </span>
+              <span>developerhub@protonmail.com</span>
+            </a>
+          </li>
+          <li>
+            <a href="instagram.com/developerhub" target="_blank">
+              <span class="arrow">↳ </span>
+              <span>Instagram</span>
+            </a>
+          </li>
+        </ul>
       </div>
 
       <div class="imprint">
@@ -74,7 +84,7 @@
         <span class="tagline">Web-Design & Web-Development</span>
         <header>
           <h1 class="title">we design & program websites</h1>
-          <p class="text">Let's work together today to create an awesome website for your business.</p>
+          <p class="text">Let's work together today to <i>create an awesome website</i> for your business.</p>
         </header>
         <a href="#" class="button">
           <span class="button-text-regular">Get in </span>
