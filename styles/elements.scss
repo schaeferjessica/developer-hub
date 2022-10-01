@@ -31,13 +31,18 @@ a:visited {
   color: var(--color-text);
 }
 
+a:focus-visible {
+  outline: 0.2rem dashed var(--color-primary);
+  outline-offset: 0.2rem;
+}
+
 a:hover,
-a:focus {
+a:focus-visible {
   color: var(--color-primary);
 }
 
 a:hover .arrow,
-a:focus .arrow {
+a:focus-visible .arrow {
   transform: translateY(0.2rem);
 }
 
