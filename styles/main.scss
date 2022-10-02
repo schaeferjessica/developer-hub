@@ -5,9 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  overflow: scroll;
-  scrollbar-color: var(--color-primary) var(--color-background);
-  scrollbar-width: none;
+  overflow: auto;
 }
 
 .tagline {
@@ -30,7 +28,6 @@
   padding: 1rem 2rem;
   display: inline-block;
   margin-top: 3.5rem;
-  transition: all 0.8s ease-in-out;
 }
 
 .button:hover,

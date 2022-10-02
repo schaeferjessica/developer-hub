@@ -1,8 +1,6 @@
 .grid__aside {
   padding: calc(1rem + 2vw);
-  overflow: scroll;
-  scrollbar-color: var(--color-primary) var(--color-background);
-  scrollbar-width: none;
+  overflow: auto;
 }
 
 .contact,
@@ -28,5 +26,5 @@
   font-style: normal;
   display: inline-block;
   padding: 0.2rem;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
