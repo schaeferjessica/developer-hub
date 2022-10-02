@@ -27,7 +27,7 @@
   border-radius: 50px;
   padding: 1rem 2rem;
   display: inline-block;
-  margin-top: 3.5rem;
+  margin-top: calc(2rem + 0.5vw);
 }
 
 .button:hover,
