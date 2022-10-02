@@ -2,11 +2,11 @@
   <header class="grid__header">
     <p class="intro">{{ $t("headerIntro") }}<br>
       <a href="https://www.linkedin.com/in/nkosakul/" target="_blank">
-        <span>Nat Kosakul</span>
+        <span>Nat Kosakul </span>
         <span class="arrow"> ↳ </span>
       </a> &
       <a href="https://www.linkedin.com/in/jessicaschafer/" target="_blank">
-        <span>Jessica Schäfer</span>
+        <span>Jessica Schäfer </span>
         <span class="arrow"> ↳ </span>
       </a>
     </p>

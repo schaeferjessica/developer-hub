@@ -5,6 +5,12 @@
   --color-background: #F9F7F6;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'IBM Plex Sans', 'Roboto', sans-serif;
   font-weight: 300;
@@ -30,24 +36,30 @@ body {
   }
 }
 
-a {
+a,
+button {
+  font-weight: 300;
   color: var(--color-text);
   text-decoration: none;
   transition: all 0.3s ease-in-out;
   font-style: italic;
+  font-size: calc(1rem + 0.5vw);
 }
 
 a:visited {
   color: var(--color-text);
 }
 
-a:focus-visible {
+a:focus-visible,
+button:focus-visible {
   outline: 0.2rem dashed var(--color-primary);
   outline-offset: 0.2rem;
 }
 
 a:hover,
-a:focus-visible {
+button:hover,
+a:focus-visible,
+button:focus-visible {
   color: var(--color-primary);
 }
 
@@ -80,6 +92,28 @@ li {
 
 abbr {
   text-decoration: none;
+}
+
+input {
+  font-family: 'IBM Plex Sans', 'Roboto', sans-serif;
+  font-weight: 200;
+  background-color: transparent;
+  border: 1px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(269.58deg, #C18050 42.69%, #8594FF 55.93%);
+  padding: calc(0.5rem + 0.5vw);
+  font-size: calc(1rem + 0.5vw);
+  outline: none;
+  margin: 0;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+input::placeholder {
+  font-family: 'IBM Plex Sans', 'Roboto', sans-serif;
+  font-weight: 200;
+  color: var(--color-secondary);
+  opacity: 0.5;
 }
 
 h1 {

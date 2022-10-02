@@ -44,7 +44,7 @@ export default defineNuxtConfig({
           mainTextOne: 'Let us work together today to ',
           mainTextTwo: 'create an awesome website ',
           mainTextThree: 'for your business.',
-          mainButtonRegular: 'Get in ',
+          mainButtonRegular: 'get in ',
           mainButtonThin: 'touch',
         },
         de: {
