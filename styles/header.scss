@@ -1,11 +1,19 @@
 .grid {  
   display: grid;
-  grid-template-columns: 35% 65%;
-  grid-template-rows: 20% 80%;
   grid-template-areas:
     "header header"
-    "aside main";
-  height: 100vh;
+    "main main"
+    "aside aside";
+
+  @media (min-width: 800px) {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 20% 80%;
+    grid-template-areas:
+      "header header"
+      "aside main";
+    height: 100vh;
+  }
 }
 
 .grid__header { grid-area: header; }
@@ -17,7 +25,7 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid var(--color-primary);
-  padding: 2rem;
+  padding: calc(1rem + 2vw);
 }
 
 .language-switch {

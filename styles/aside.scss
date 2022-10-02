@@ -1,8 +1,5 @@
 .grid__aside {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  padding-right: 4rem;
-  padding-left: 2rem;
+  padding: calc(1rem + 2vw);
   overflow: scroll;
   scrollbar-color: var(--color-primary) var(--color-background);
   scrollbar-width: none;
@@ -10,27 +7,24 @@
 
 .contact,
 .imprint {
-  margin-top: 3rem;
+  margin-top: calc(1rem + 2vw);
 }
 
 .address__link {
-  font-size: 1rem;
+  font-size: calc( 0.8rem + 0.5vw);
   font-style: normal;
   display: block;
 }
 
-.imprint__text {
-  margin-top: 1rem;
-  font-size: 1rem;
-}
-
+.imprint__text,
 .copyright {
   margin-top: 1rem;
-  font-size: 1rem;
+  font-size: calc( 0.8rem + 0.5vw);
+  display: block;
 }
 
 .arrow {
-  font-size: 1.3rem;
+  font-size: calc(0.8rem + 0.5vw);
   font-style: normal;
   display: inline-block;
   padding: 0.2rem;
