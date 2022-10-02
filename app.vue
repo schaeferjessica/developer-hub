@@ -3,12 +3,12 @@
     <header class="grid__header">
       <p class="intro">Hello, we are freelance web-developer<br>
         <a href="https://www.linkedin.com/in/nkosakul/" target="_blank">
-          <span>Nat Kosakul</span>
-          <span class="arrow"> ↳</span>
+          <span>Nat Kosakul </span>
+          <span class="arrow"> ↳ </span>
         </a> &
         <a href="https://www.linkedin.com/in/jessicaschafer/" target="_blank">
-          <span>Jessica Schäfer</span>
-          <span class="arrow"> ↳</span>
+          <span>Jessica Schäfer </span>
+          <span class="arrow"> ↳ </span>
         </a>
       </p>
 
@@ -77,24 +77,22 @@
         </address>
         <p class="imprint__text">Responsible for programming and journalistic-editorial content according to § 55 RStV developer:hub, USt-IdNr.: DE253194968 Zepplinstrasse 13A, 97074 Würzburg</p>
       </div>
-    </aside>
-
-    <main class="grid__main">
-      <div class="main__context">
-        <span class="tagline">Web-Design & Web-Development</span>
-        <header>
-          <h1 class="title">we design & program websites</h1>
-          <p class="text">Let's work together today to <i>create an awesome website</i> for your business.</p>
-        </header>
-        <a href="#" class="button">
-          <span class="button-text-regular">Get in </span>
-          <span class="button-text-thin">touch</span>
-        </a>
-      </div>
 
       <footer>
         <small class="copyright">© 2022 developer:hub</small>
       </footer>
+    </aside>
+
+    <main class="grid__main">
+      <span class="tagline">Web-Design & Web-Development</span>
+      <header>
+        <h1 class="title">we design & program websites</h1>
+        <p class="text">Let's work together today to <i>create an awesome website</i> for your business.</p>
+      </header>
+      <a href="#" class="button">
+        <span class="button-text-regular">Get in </span>
+        <span class="button-text-thin">touch</span>
+      </a>
     </main>
   </div>
 </template>

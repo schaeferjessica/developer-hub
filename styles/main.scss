@@ -1,20 +1,16 @@
 .grid__main {
   border-left: 1px solid var(--color-primary);
   padding-top: 2rem;
+  padding-bottom: 2rem;
   padding-right: 2rem;
   padding-left: 4rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 73%;
-}
-
-.main__context {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  height: 100%;
+  overflow: scroll;
+  scrollbar-color: var(--color-primary) var(--color-background);
+  scrollbar-width: none;
 }
 
 .tagline {
@@ -38,20 +34,15 @@
   padding: 1rem 2rem;
   display: inline-block;
   margin-top: 3.5rem;
+  transition: all 0.8s ease-in-out;
 }
 
 .button:hover,
 .button:focus-visible {
-  transform: scale(1.04);
+  transform: scale(1.02);
 }
 
 .button-text-regular {
   font-weight: 400;
   font-style: normal;
-}
-
-.copyright {
-  font-size: 1rem;
-  text-align: right;
-  display: block;
 }
