@@ -83,8 +83,10 @@ abbr {
 }
 
 h1 {
-  font-size: calc(4rem + 0.5vw);
+  font-family: 'Space Grotesk', 'IBM Plex Sans', 'Roboto', sans-serif;
+  font-style: normal;
   font-weight: 400;
+  font-size: calc(4rem + 0.5vw);
   line-height: 1.2;
   margin: 0;
   padding: 0;
