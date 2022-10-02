@@ -13,12 +13,12 @@
       </p>
 
       <nav class="language-switch">
-        <a href="#/en/" hreflang="en" aria-current="page">
+        <nuxt-link :to="localePath('/', 'en')">
           <abbr title="English">en</abbr>
-        </a>
-        <a href="#/de/" hreflang="de">
+        </nuxt-link>
+        <nuxt-link :to="localePath('/', 'de')">
           <abbr title="Deutsch">de</abbr>
-        </a>
+        </nuxt-link>
       </nav>
     </header>
 
