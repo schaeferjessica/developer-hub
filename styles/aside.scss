@@ -16,7 +16,7 @@
 
 .imprint__text,
 .copyright {
-  margin-top: 1rem;
+  margin-top: calc( 0.5rem + 0.5vw);
   font-size: calc( 0.8rem + 0.5vw);
   display: block;
 }
@@ -25,6 +25,6 @@
   font-size: calc(0.8rem + 0.5vw);
   font-style: normal;
   display: inline-block;
-  padding: 0.2rem;
+  padding-right: calc(0.1rem + 0.5vw);
   transition: all 0.3s ease-in-out;
 }

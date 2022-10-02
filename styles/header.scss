@@ -37,6 +37,6 @@
 
 .language-switch {
   display: flex;
-  gap: 0.5rem;
+  gap: calc(0.1rem + 0.5vw);
   align-items: flex-start;
 }

@@ -14,12 +14,12 @@
 }
 
 .title {
-  margin-top: 1rem;
+  margin-top: calc( 0.5rem + 0.5vw);
 }
 
 .text {
   font-size: calc( 1.5rem + 0.5vw);
-  margin-top: 1.5rem;
+  margin-top: calc( 1.2rem + 0.5vw);
 }
 
 .button {
