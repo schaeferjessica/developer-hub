@@ -1,17 +1,23 @@
 <template>
   <main class="grid__main">
     
-    <span class="tagline">{{ $t("mainTagline") }}</span>
-    <header>
-      <h1 class="title">{{ $t("mainHeadline") }}</h1>
-      <p class="text">{{ $t("mainTextOne") }}<i>{{ $t("mainTextTwo") }}</i>{{ $t("mainTextThree") }}</p>
-    </header>
-    <a href="#" class="button">
-      <span class="button-text-regular">{{ $t("mainButtonRegular") }}</span>
-      <span class="button-text-thin">{{ $t("mainButtonThin") }}</span>
-    </a>
+    <template v-if="!showForm">
+      <span class="tagline">{{ $t("mainTagline") }}</span>
+      <header>
+        <h1 class="title">{{ $t("mainHeadline") }}</h1>
+        <p class="text">{{ $t("mainTextOne") }}<i>{{ $t("mainTextTwo") }}</i>{{ $t("mainTextThree") }}</p>
+      </header>
+      <button class="button" @click="showForm = true">
+        <span class="button-text-regular">{{ $t("mainButtonRegular") }}</span>
+        <span class="button-text-thin">{{ $t("mainButtonThin") }}</span>
+      </button>
+    </template>
 
-    <form action="#" class="from">
+    <form action="#" class="from" v-if="showForm">
+      <!-- <button class="button" @click="showForm = false">
+        <span class="button-text-regular">{{ $t("mainButtonBackRegular") }}</span>
+        <span class="button-text-thin">{{ $t("mainButtonBackThin") }}</span>
+      </button> -->
       <label for="name" class="from__label">{{ $t("mainLabelName") }}</label>
       <input placeholder="Jane Doe" name="name" type="text" id="name" class="from__input">
 
@@ -32,3 +38,14 @@
 
   </main>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      showForm: false,
+    }
+  }
+}
+
+</script>

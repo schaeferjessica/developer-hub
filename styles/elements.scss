@@ -44,6 +44,7 @@ button {
   transition: all 0.3s ease-in-out;
   font-style: italic;
   font-size: calc(1rem + 0.5vw);
+  cursor: pointer;
 }
 
 a:visited {
