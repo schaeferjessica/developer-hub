@@ -1,56 +1,86 @@
 <template>
   <main class="grid__main">
-    
     <template v-if="!showForm">
-      <span class="tagline">{{ $t("mainTagline") }}</span>
+      <span class="tagline">{{ $t('mainTagline') }}</span>
       <header class="main__header">
-        <h1 class="main__title">{{ $t("mainHeadline") }}</h1>
-        <p class="main__text">{{ $t("mainTextOne") }}<i>{{ $t("mainTextTwo") }}</i>{{ $t("mainTextThree") }}</p>
+        <h1 class="main__title">{{ $t('mainHeadline') }}</h1>
+        <p class="main__text">
+          {{ $t('mainTextOne') }}<i>{{ $t('mainTextTwo') }}</i
+          >{{ $t('mainTextThree') }}
+        </p>
       </header>
       <button class="button" @click="showForm = true">
-        <span class="button-text-regular">{{ $t("mainButtonRegular") }}</span>
-        <span class="button-text-thin">{{ $t("mainButtonThin") }}</span>
+        <span class="button-text-regular">{{ $t('mainButtonRegular') }}</span>
+        <span class="button-text-thin">{{ $t('mainButtonThin') }}</span>
       </button>
     </template>
 
-    <form action="#" class="from" v-if="showForm" ref="form" @submit.prevent="sendEmail">
+    <form
+      action="#"
+      class="from"
+      v-if="showForm"
+      ref="form"
+      @submit.prevent="sendEmail"
+    >
       <!-- <button class="button" @click="showForm = false">
         <span class="button-text-regular">{{ $t("mainButtonBackRegular") }}</span>
         <span class="button-text-thin">{{ $t("mainButtonBackThin") }}</span>
       </button> -->
 
-      <label for="name" class="from__label">{{ $t("mainLabelName") }}</label>
-      <input :placeholder="$t('mainPlaceholderName')" name="name" type="text" id="name" class="from__input">
+      <label for="name" class="from__label">{{ $t('mainLabelName') }}</label>
+      <input
+        :placeholder="$t('mainPlaceholderName')"
+        name="name"
+        type="text"
+        id="name"
+        class="from__input"
+      />
 
-      <label for="email" class="from__label">{{ $t("mainLabelEmail") }}</label>
-      <input :placeholder="$t('mainPlaceholderEmail')" name="email" type="text" id="email" class="from__input">
+      <label for="email" class="from__label">{{ $t('mainLabelEmail') }}</label>
+      <input
+        :placeholder="$t('mainPlaceholderEmail')"
+        name="email"
+        type="text"
+        id="email"
+        class="from__input"
+      />
 
-      <label for="project" class="from__label">{{ $t("mainLabelProject") }}</label>
-      <input type="text" id="project" name="project" class="from__input">
+      <label for="project" class="from__label">{{
+        $t('mainLabelProject')
+      }}</label>
+      <input type="text" id="project" name="project" class="from__input" />
 
-      <label for="pages" class="from__label">{{ $t("mainLabelPages") }}</label>
-      <input type="text" id="pages" name="pages" class="from__input">
+      <label for="pages" class="from__label">{{ $t('mainLabelPages') }}</label>
+      <input type="text" id="pages" name="pages" class="from__input" />
 
       <!-- Honeypot -->
-      <label for="honeypot-name" style="display: none;">Its a trap</label>
-      <input type="text" id="honeypot-name" name="honeypot-name" ref="honeypotEmptyEl" style="display: none;" />
-
-      <label for="honeypot-email" class="sr-only" aria-hidden="true">Another trap</label>
+      <label for="honeypot-name" style="display: none">Its a trap</label>
       <input
-          class="sr-only"
-          type="text"
-          id="honeypot-email"
-          name="honeypot-email"
-          :value="honeypotEmail"
-          ref="honeypotjsEl"
-          aria-hidden="true"
-        />
+        type="text"
+        id="honeypot-name"
+        name="honeypot-name"
+        ref="honeypotEmptyEl"
+        style="display: none"
+      />
+
+      <label for="honeypot-email" class="sr-only" aria-hidden="true"
+        >Another trap</label
+      >
+      <input
+        class="sr-only"
+        type="text"
+        id="honeypot-email"
+        name="honeypot-email"
+        :value="honeypotEmail"
+        ref="honeypotjsEl"
+        aria-hidden="true"
+      />
 
       <button type="submit" name="newsletter" class="button">
-        <span class="button-text-regular">{{ $t("mainSubmitRegular") }}</span>
-        <span class="button-text-thin">{{ $t("mainSubmitThin") }}</span>
+        <span class="button-text-regular">{{ $t('mainSubmitRegular') }}</span>
+        <span class="button-text-thin">{{ $t('mainSubmitThin') }}</span>
       </button>
-    </form> 
+    </form>
 
     <!-- <div v-if="showToast">
       <p class="main__text" v-if="formSent">Absenden war erfolgreich. Wir melden uns vielleicht mal</p>
@@ -59,42 +89,54 @@
   </main>
 </template>
 <script>
-  import emailjs from '@emailjs/browser';
-  
-  export default {
-    data() {
-      return {
-        showForm: false,
-        formSent: false,
-        showToast: false,
-        honeypotEmail: 'honeypot@honey.com',
+import emailjs from '@emailjs/browser';
+
+export default {
+  data() {
+    return {
+      showForm: false,
+      formSent: false,
+      showToast: false,
+      honeypotEmail: 'honeypot@honey.com',
+    };
+  },
+  methods: {
+    sendEmail() {
+      // catch bots
+      if (
+        this.$refs.honeypotjsEl.value === this.honeypotEmail &&
+        !this.$refs.honeypotEmptyEl.value
+      ) {
+        return;
       }
+
+      emailjs
+        .sendForm(
+          this.$config.emailJsServiceId,
+          this.$config.emailJsTemplateId,
+          this.$refs.form,
+          this.$config.emailJsPublicKey
+        )
+        .then(
+          () => {
+            this.formSent = true;
+            this.showToast = true;
+
+            setTimeout(() => {
+              this.showToast = false;
+            }, 5000);
+          },
+          error => {
+            console.error(error.text);
+            this.formSent = false;
+            this.showToast = true;
+
+            setTimeout(() => {
+              this.showToast = false;
+            }, 5000);
+          }
+        );
     },
-    methods: {
-      sendEmail() {
-        // catch bots
-        if (this.$refs.honeypotjsEl.value === this.honeypotEmail && !this.$refs.honeypotEmptyEl.value) {
-          return
-        }
-
-        emailjs.sendForm(this.$config.emailJsServiceId, this.$config.emailJsTemplateId, this.$refs.form, this.$config.emailJsPublicKey)
-          .then(() => {
-              this.formSent = true;
-              this.showToast = true;
-
-              setTimeout(() => {
-                this.showToast = false;
-              }, 5000);
-          }, (error) => {
-              console.error(error.text);
-              this.formSent = false;
-              this.showToast = true;
-
-              setTimeout(() => {
-                this.showToast = false;
-              }, 5000);
-          });
-      }
-    }
-  }
+  },
+};
 </script>

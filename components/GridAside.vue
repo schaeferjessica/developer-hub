@@ -1,7 +1,7 @@
 <template>
   <aside class="grid__aside">
     <div class="references">
-      <h2>{{ $t("asideTitleOne") }}</h2>
+      <h2>{{ $t('asideTitleOne') }}</h2>
       <ul>
         <li>
           <a href="#" target="_blank">
@@ -23,9 +23,9 @@
         </li>
       </ul>
     </div>
-    
+
     <div class="contact">
-      <h2>{{ $t("asideTitleTwo") }}</h2>
+      <h2>{{ $t('asideTitleTwo') }}</h2>
       <ul>
         <li>
           <a href="mailto:developerhub@protonmail.com" class="contact__mail">
@@ -43,7 +43,7 @@
     </div>
 
     <div class="imprint">
-      <h2>{{ $t("asideTitleThree") }}</h2>
+      <h2>{{ $t('asideTitleThree') }}</h2>
       <address class="address">
         <a href="mailto:developerhub@protonmail.com" class="address__link">
           <span>developerhub@protonmail.com</span>
@@ -52,7 +52,7 @@
           <span>0176 22622962</span>
         </a>
       </address>
-      <p class="imprint__text">{{ $t("asideImprint") }}</p>
+      <p class="imprint__text">{{ $t('asideImprint') }}</p>
     </div>
 
     <footer>
@@ -62,7 +62,7 @@
 </template>
 
 <script>
-  export default {
-    // page properties go here
-  }
+export default {
+  // page properties go here
+};
 </script>

@@ -3,38 +3,35 @@ export default defineNuxtConfig({
   publicRuntimeConfig: {
     emailJsServiceId: process.env.EMAILJS_SERVICE_ID,
     emailJsTemplateId: process.env.EMAILJS_TEMPLATE_ID,
-    emailJsPublicKey: process.env.EMAILJS_PUBLIC_KEY
+    emailJsPublicKey: process.env.EMAILJS_PUBLIC_KEY,
   },
   meta: {
     title: 'developer:hub',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      { hid: 'description', name: 'description', content: '' },
     ],
   },
   css: [
     // SCSS file in the project
-    '@/styles/index.scss'
+    '@/styles/index.scss',
   ],
-  modules: [
-    '@nuxtjs/i18n',
-  ],
+  modules: ['@nuxtjs/i18n'],
   i18n: {
     baseUrl: 'https://developerhub.vercel.app/',
     locales: [
       {
         code: 'en',
-        iso: 'en-US'
+        iso: 'en-US',
       },
       {
         code: 'de',
-        iso: 'de-DE'
+        iso: 'de-DE',
       },
     ],
     defaultLocale: 'en',
     vueI18n: {
-      
       fallbackLocale: 'en',
       messages: {
         en: {
@@ -42,7 +39,8 @@ export default defineNuxtConfig({
           asideTitleOne: 'References:',
           asideTitleTwo: 'Contact:',
           asideTitleThree: 'Imprint:',
-          asideImprint: 'Responsible for programming and journalistic-editorial content according to § 55 RStV developer:hub, USt-IdNr.: DE253194968 Würzburg, Germany',
+          asideImprint:
+            'Responsible for programming and journalistic-editorial content according to § 55 RStV developer:hub, USt-IdNr.: DE253194968 Würzburg, Germany',
           mainTagline: 'Web-Design & Web-Development',
           mainHeadline: 'we design & program websites',
           mainTextOne: 'Let us work together today to ',
@@ -52,10 +50,13 @@ export default defineNuxtConfig({
           mainButtonThin: 'touch',
           mainLabelName: 'Hi, thanks for getting in touch! What is your name?',
           mainPlaceholderName: 'Jane Doe',
-          mainLabelEmail: 'What email address can we reach you at? Only to get in touch, not to send spam!',
+          mainLabelEmail:
+            'What email address can we reach you at? Only to get in touch, not to send spam!',
           mainPlaceholderEmail: "janedoe{'@'}mail.com",
-          mainLabelProject: 'Tell us about your project, send us examples, links, or just think out loud.',
-          mainLabelPages: 'How many pages are you looking to integrate into your website?',
+          mainLabelProject:
+            'Tell us about your project, send us examples, links, or just think out loud.',
+          mainLabelPages:
+            'How many pages are you looking to integrate into your website?',
           mainSubmitRegular: 'get a  ',
           mainSubmitThin: 'quote',
           mainButtonBackRegular: 'take me  ',
@@ -66,26 +67,32 @@ export default defineNuxtConfig({
           asideTitleOne: 'Referenzen:',
           asideTitleTwo: 'Kontakt:',
           asideTitleThree: 'Impressum:',
-          asideImprint: 'Verantwortlich für Programmierung und journalistisch-redaktionelle Inhalte nach § 55 RStV developer:hub, USt-IdNr.: DE253194968 Würzburg, Deutschland',
+          asideImprint:
+            'Verantwortlich für Programmierung und journalistisch-redaktionelle Inhalte nach § 55 RStV developer:hub, USt-IdNr.: DE253194968 Würzburg, Deutschland',
           mainTagline: 'Web-Design & Web-Entwicklung',
           mainHeadline: 'Wir gestalten & programmieren Webseiten',
-          mainTextOne: 'Lassen Sie uns noch heute zusammenarbeiten, um eine fantastisch ',
+          mainTextOne:
+            'Lassen Sie uns noch heute zusammenarbeiten, um eine fantastisch ',
           mainTextTwo: 'Website für Ihr Unternehmen ',
           mainTextThree: 'zu erstellen.',
           mainButtonRegular: 'in kontakt ',
           mainButtonThin: 'kommen',
-          mainLabelName: 'Hallo, vielen Dank für Ihre Kontaktaufnahme! Wie ist Ihr Name?',
+          mainLabelName:
+            'Hallo, vielen Dank für Ihre Kontaktaufnahme! Wie ist Ihr Name?',
           mainPlaceholderName: 'Erika Mustermann',
-          mainLabelEmail: 'Mit welcher E-Mail-Adresse können wir Sie erreichen? Nur um in Kontakt zu treten, nicht um Spam zu senden!',
+          mainLabelEmail:
+            'Mit welcher E-Mail-Adresse können wir Sie erreichen? Nur um in Kontakt zu treten, nicht um Spam zu senden!',
           mainPlaceholderEmail: "erikamustermann{'@'}mail.com",
-          mainLabelProject: 'Erzählen Sie uns von Ihrem Projekt, senden Sie uns Beispiele, Links oder denken Sie einfach laut.',
-          mainLabelPages: 'Wie viele Seiten möchten Sie in Ihre Website integrieren?',
+          mainLabelProject:
+            'Erzählen Sie uns von Ihrem Projekt, senden Sie uns Beispiele, Links oder denken Sie einfach laut.',
+          mainLabelPages:
+            'Wie viele Seiten möchten Sie in Ihre Website integrieren?',
           mainSubmitRegular: 'ein Angebot ',
           mainSubmitThin: 'erhalten',
           mainButtonBackRegular: 'zurück ',
           mainButtonBackThin: 'bitte',
         },
-      }
-    }
-  }
-})
+      },
+    },
+  },
+});

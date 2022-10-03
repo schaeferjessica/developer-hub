@@ -6,8 +6,8 @@
   </div>
 </template>
 
-<script>
-  import GridAside from '../components/GridAside.vue'
-  import GridHeader from '../components/GridHeader.vue'
-  import GridMain from '../components/GridMain.vue'
+<script setup>
+import GridAside from '../components/GridAside.vue';
+import GridHeader from '../components/GridHeader.vue';
+import GridMain from '../components/GridMain.vue';
 </script>
