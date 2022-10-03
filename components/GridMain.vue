@@ -3,9 +3,9 @@
     
     <template v-if="!showForm">
       <span class="tagline">{{ $t("mainTagline") }}</span>
-      <header>
-        <h1 class="title">{{ $t("mainHeadline") }}</h1>
-        <p class="text">{{ $t("mainTextOne") }}<i>{{ $t("mainTextTwo") }}</i>{{ $t("mainTextThree") }}</p>
+      <header class="main__header">
+        <h1 class="main__title">{{ $t("mainHeadline") }}</h1>
+        <p class="main__text">{{ $t("mainTextOne") }}<i>{{ $t("mainTextTwo") }}</i>{{ $t("mainTextThree") }}</p>
       </header>
       <button class="button" @click="showForm = true">
         <span class="button-text-regular">{{ $t("mainButtonRegular") }}</span>
