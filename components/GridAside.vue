@@ -30,7 +30,7 @@
         <li>
           <a href="mailto:developerhub@protonmail.com" class="contact__mail">
             <span class="arrow">↳ </span>
-            <span>developerhub@protonmail.com</span>
+            <span>hello@developerhub.tech </span>
           </a>
         </li>
         <li>
@@ -45,8 +45,8 @@
     <div class="imprint">
       <h2>{{ $t('asideTitleThree') }}</h2>
       <address class="address">
-        <a href="mailto:developerhub@protonmail.com" class="address__link">
-          <span>developerhub@protonmail.com</span>
+        <a href="mailto:hello@developerhub.tech" class="address__link">
+          <span>hello@developerhub.tech </span>
         </a>
         <a href="tel:+176 22622962" class="address__link">
           <span>0176 22622962</span>
