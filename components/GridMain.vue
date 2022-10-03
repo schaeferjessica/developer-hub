@@ -13,7 +13,7 @@
       </button>
     </template>
 
-    <form action="#" class="from" v-if="showForm">
+    <form action="#" class="from" v-if="showForm" ref="form" @submit.prevent="sendEmail">
       <!-- <button class="button" @click="showForm = false">
         <span class="button-text-regular">{{ $t("mainButtonBackRegular") }}</span>
         <span class="button-text-thin">{{ $t("mainButtonBackThin") }}</span>
@@ -37,16 +37,43 @@
       </button>
     </form> 
 
+    <!-- <div v-if="showToast">
+      <p class="main__text" v-if="formSent">Absenden war erfolgreich. Wir melden uns vielleicht mal</p>
+      <p class="main__text" v-else>Ups, da ist was schief gelaufen!</p>
+    </div> -->
   </main>
 </template>
-
 <script>
-export default {
-  data() {
-    return {
-      showForm: false,
+  import emailjs from '@emailjs/browser';
+  
+  export default {
+    data() {
+      return {
+        showForm: false,
+        formSent: false,
+        showToast: false,
+      }
+    },
+    methods: {
+      sendEmail() {
+        emailjs.sendForm(this.$config.emailJsServiceId, this.$config.emailJsTemplateId, this.$refs.form, this.$config.emailJsPublicKey)
+          .then(() => {
+              this.formSent = true;
+              this.showToast = true;
+
+              setTimeout(() => {
+                this.showToast = false;
+              }, 5000);
+          }, (error) => {
+              console.error(error.text);
+              this.formSent = false;
+              this.showToast = true;
+
+              setTimeout(() => {
+                this.showToast = false;
+              }, 5000);
+          });
+      }
     }
   }
-}
-
 </script>

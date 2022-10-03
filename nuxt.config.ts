@@ -1,5 +1,10 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
+  publicRuntimeConfig: {
+    emailJsServiceId: process.env.EMAILJS_SERVICE_ID,
+    emailJsTemplateId: process.env.EMAILJS_TEMPLATE_ID,
+    emailJsPublicKey: process.env.EMAILJS_PUBLIC_KEY
+  },
   meta: {
     title: 'developer:hub',
     meta: [
@@ -17,7 +22,6 @@ export default defineNuxtConfig({
   ],
   i18n: {
     baseUrl: 'https://developerhub.vercel.app/',
-    
     locales: [
       {
         code: 'en',

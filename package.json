@@ -15,6 +15,7 @@
     "sass-loader": "10"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.7.0",
     "@nuxtjs/i18n": "^8.0.0-alpha.2"
   }
 }
