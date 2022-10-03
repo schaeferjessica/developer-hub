@@ -40,7 +40,10 @@
           </a>
         </li>
         <li>
-          <a href="instagram.com/developerhub" target="_blank">
+          <a
+            href="https://www.instagram.com/developerhub.tech/"
+            target="_blank"
+          >
             <span class="arrow">↳ </span>
             <span>Instagram</span>
           </a>
