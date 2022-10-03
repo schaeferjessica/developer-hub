@@ -1,3 +1,6 @@
+@use './generics' as *;
+
+
 .grid__main {
   padding: calc(1rem + 1vw);
   overflow: auto;
@@ -16,7 +19,8 @@
 }
 
 .main__tagline {
-  font-size: calc( 0.8rem + 0.5vw);
+  @include font-size--small;
+  
   text-transform: uppercase;
 }
 
@@ -68,8 +72,9 @@
 }
 
 .toast {
+  @include font-size--small;
+
   position: fixed;
-  font-size: calc(0.8rem + 0.5vw);
   bottom: calc(0.4rem + 0.5vw);
   left: 50%;
   background-color: var(--color-background);

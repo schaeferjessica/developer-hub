@@ -1,3 +1,5 @@
+@use './generics' as *;
+
 :root {
   --color-primary: #8594FF;
   --color-secondary: #C18050;
@@ -12,9 +14,10 @@
 }
 
 body {
+  @include font-size--medium;
+
   font-family: 'IBM Plex Sans', 'Roboto', sans-serif;
-  font-weight: 300;
-  font-size: calc(1rem + 0.5vw);
+  font-weight: 300;  
   line-height: normal;
   color: var(--color-text);
   background-color: var(--color-background);
@@ -38,12 +41,13 @@ body {
 
 a,
 button {
+  @include font-size--medium;
+
   font-weight: 300;
   color: var(--color-text);
   text-decoration: none;
   transition: all 0.3s ease-in-out;
-  font-style: italic;
-  font-size: calc(1rem + 0.5vw);
+  font-style: italic;  
   cursor: pointer;
 }
 
@@ -96,11 +100,14 @@ abbr {
 }
 
 label {
+  @include font-size--small;
+
   font-weight: 300;
-  font-size: calc( 0.8rem + 0.5vw);
 }
 
 input {
+  @include font-size--small;
+
   font-family: 'IBM Plex Sans', 'Roboto', sans-serif;
   font-weight: 300;
   background-color: transparent;
@@ -108,7 +115,6 @@ input {
   border-image-slice: 1;
   border-image-source: linear-gradient(269.58deg, #C18050 42.69%, #8594FF 55.93%);
   padding: calc(0.5rem + 0.5vw);
-  font-size: calc( 0.8rem + 0.5vw);
   outline: none;
   margin: 0;
   width: 100%;
@@ -116,9 +122,10 @@ input {
 }
 
 input::placeholder {
+  @include font-size--small;
+
   font-family: 'IBM Plex Sans', 'Roboto', sans-serif;
   font-weight: 300;
-  font-size: calc( 0.8rem + 0.5vw);
   color: var(--color-secondary);
   opacity: 0.5;
 }
@@ -127,7 +134,7 @@ h1 {
   font-family: 'Space Grotesk', 'IBM Plex Sans', 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: calc(4rem + 0.5vw);
+  font-size: calc(3rem + 2vw);
   line-height: 1.2;
   margin: 0;
   padding: 0;
@@ -145,7 +152,8 @@ h1:hover {
 }
 
 h2 {
-  font-size: calc(1rem + 0.5vw);
+  @include font-size--medium;
+
   font-weight: 300;
   line-height: 1.2;
   margin: 0;

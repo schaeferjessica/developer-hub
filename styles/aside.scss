@@ -1,3 +1,5 @@
+@use './generics' as *;
+
 .grid__aside {
   padding: calc(1rem + 1vw);
   overflow: auto;
@@ -9,15 +11,17 @@
 }
 
 .address__link {
-  font-size: calc( 0.8rem + 0.5vw);
+  @include font-size--small;
+
   font-style: normal;
   display: block;
 }
 
 .imprint__text,
 .copyright {
+  @include font-size--small;
+
   margin-top: calc( 0.5rem + 0.5vw);
-  font-size: calc( 0.8rem + 0.5vw);
   display: block;
 }
 
