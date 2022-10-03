@@ -35,12 +35,15 @@ export default defineNuxtConfig({
       fallbackLocale: 'en',
       messages: {
         en: {
+          // header
           headerIntro: 'Hello, we are freelance web-developer',
+          // aside
           asideTitleOne: 'References:',
           asideTitleTwo: 'Contact:',
           asideTitleThree: 'Imprint:',
           asideImprint:
             'Responsible for programming and journalistic-editorial content according to § 55 RStV developer:hub, USt-IdNr.: DE253194968 Würzburg, Germany',
+          // main
           mainTagline: 'Web-Design & Web-Development',
           mainHeadline: 'we design & program websites',
           mainTextOne: 'Let us work together today to ',
@@ -48,27 +51,34 @@ export default defineNuxtConfig({
           mainTextThree: 'for your business.',
           mainButtonRegular: 'get in ',
           mainButtonThin: 'touch',
-          mainLabelName: 'Hi, thanks for getting in touch! What is your name?',
-          mainPlaceholderName: 'Jane Doe',
-          mainLabelEmail:
+          // form
+          formLabelName: 'Hi, thanks for getting in touch! What is your name?',
+          formPlaceholderName: 'Jane Doe',
+          formLabelEmail:
             'What email address can we reach you at? Only to get in touch, not to send spam!',
-          mainPlaceholderEmail: "janedoe{'@'}mail.com",
-          mainLabelProject:
+          formPlaceholderEmail: "janedoe{'@'}mail.com",
+          formLabelProject:
             'Tell us about your project, send us examples, links, or just think out loud.',
-          mainLabelPages:
+          formLabelPages:
             'How many pages are you looking to integrate into your website?',
-          mainSubmitRegular: 'get a  ',
-          mainSubmitThin: 'quote',
+          formSubmitRegular: 'get a  ',
+          formSubmitThin: 'quote',
+          formToast:
+            'Thanks for getting in touch! We will get back to you soon.',
+
           mainButtonBackRegular: 'take me  ',
           mainButtonBackThin: 'back',
         },
         de: {
+          // header
           headerIntro: 'Hallo wir sind Selbstständige Web-Entwickler:in',
+          // aside
           asideTitleOne: 'Referenzen:',
           asideTitleTwo: 'Kontakt:',
           asideTitleThree: 'Impressum:',
           asideImprint:
             'Verantwortlich für Programmierung und journalistisch-redaktionelle Inhalte nach § 55 RStV developer:hub, USt-IdNr.: DE253194968 Würzburg, Deutschland',
+          // main
           mainTagline: 'Web-Design & Web-Entwicklung',
           mainHeadline: 'Wir gestalten & programmieren Webseiten',
           mainTextOne:
@@ -77,18 +87,22 @@ export default defineNuxtConfig({
           mainTextThree: 'zu erstellen.',
           mainButtonRegular: 'in kontakt ',
           mainButtonThin: 'kommen',
-          mainLabelName:
+          // form
+          formLabelName:
             'Hallo, vielen Dank für Ihre Kontaktaufnahme! Wie ist Ihr Name?',
-          mainPlaceholderName: 'Erika Mustermann',
-          mainLabelEmail:
+          formPlaceholderName: 'Erika Mustermann',
+          formLabelEmail:
             'Mit welcher E-Mail-Adresse können wir Sie erreichen? Nur um in Kontakt zu treten, nicht um Spam zu senden!',
-          mainPlaceholderEmail: "erikamustermann{'@'}mail.com",
-          mainLabelProject:
+          formPlaceholderEmail: "erikamustermann{'@'}mail.com",
+          formLabelProject:
             'Erzählen Sie uns von Ihrem Projekt, senden Sie uns Beispiele, Links oder denken Sie einfach laut.',
-          mainLabelPages:
+          formLabelPages:
             'Wie viele Seiten möchten Sie in Ihre Website integrieren?',
-          mainSubmitRegular: 'ein Angebot ',
-          mainSubmitThin: 'erhalten',
+          formSubmitRegular: 'ein Angebot ',
+          formSubmitThin: 'erhalten',
+          formToast:
+            'Vielen Dank für Ihre Kontaktaufnahme! Wir melden uns bald.',
+
           mainButtonBackRegular: 'zurück ',
           mainButtonBackThin: 'bitte',
         },

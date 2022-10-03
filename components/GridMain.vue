@@ -27,18 +27,18 @@
         <span class="button-text-thin">{{ $t("mainButtonBackThin") }}</span>
       </button> -->
 
-      <label for="name" class="from__label">{{ $t('mainLabelName') }}</label>
+      <label for="name" class="from__label">{{ $t('formLabelName') }}</label>
       <input
-        :placeholder="$t('mainPlaceholderName')"
+        :placeholder="$t('formPlaceholderName')"
         name="name"
         type="text"
         id="name"
         class="from__input"
       />
 
-      <label for="email" class="from__label">{{ $t('mainLabelEmail') }}</label>
+      <label for="email" class="from__label">{{ $t('formLabelEmail') }}</label>
       <input
-        :placeholder="$t('mainPlaceholderEmail')"
+        :placeholder="$t('formPlaceholderEmail')"
         name="email"
         type="text"
         id="email"
@@ -46,11 +46,11 @@
       />
 
       <label for="project" class="from__label">{{
-        $t('mainLabelProject')
+        $t('formLabelProject')
       }}</label>
       <input type="text" id="project" name="project" class="from__input" />
 
-      <label for="pages" class="from__label">{{ $t('mainLabelPages') }}</label>
+      <label for="pages" class="from__label">{{ $t('formLabelPages') }}</label>
       <input type="text" id="pages" name="pages" class="from__input" />
 
       <!-- Honeypot -->
@@ -77,13 +77,20 @@
       />
 
       <button type="submit" name="newsletter" class="button">
-        <span class="button-text-regular">{{ $t('mainSubmitRegular') }}</span>
-        <span class="button-text-thin">{{ $t('mainSubmitThin') }}</span>
+        <span class="button-text-regular">{{ $t('formSubmitRegular') }}</span>
+        <span class="button-text-thin">{{ $t('formSubmitThin') }}</span>
       </button>
     </form>
 
+    <div class="toast" :class="{ 'toast--active': showToast }">
+      <p class="toast__text">
+        {{ $t('formToast') }}
+      </p>
+    </div>
     <!-- <div v-if="showToast">
-      <p class="main__text" v-if="formSent">Absenden war erfolgreich. Wir melden uns vielleicht mal</p>
+      <p class="main__text" v-if="formSent">
+        Absenden war erfolgreich. Wir melden uns vielleicht mal
+      </p>
       <p class="main__text" v-else>Ups, da ist was schief gelaufen!</p>
     </div> -->
   </main>
@@ -104,8 +111,8 @@ export default {
     sendEmail() {
       // catch bots
       if (
-        this.$refs.honeypotjsEl.value === this.honeypotEmail &&
-        !this.$refs.honeypotEmptyEl.value
+        this.$refs.honeypotjsEl.value !== this.honeypotEmail &&
+        this.$refs.honeypotEmptyEl.value
       ) {
         return;
       }
@@ -121,6 +128,7 @@ export default {
           () => {
             this.formSent = true;
             this.showToast = true;
+            this.showForm = false;
 
             setTimeout(() => {
               this.showToast = false;
