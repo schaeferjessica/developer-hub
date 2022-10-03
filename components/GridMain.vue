@@ -31,6 +31,21 @@
       <label for="pages" class="from__label">{{ $t("mainLabelPages") }}</label>
       <input type="text" id="pages" name="pages" class="from__input">
 
+      <!-- Honeypot -->
+      <label for="honeypot-name" style="display: none;">Its a trap</label>
+      <input type="text" id="honeypot-name" name="honeypot-name" ref="honeypotEmptyEl" style="display: none;" />
+
+      <label for="honeypot-email" class="sr-only" aria-hidden="true">Another trap</label>
+      <input
+          class="sr-only"
+          type="text"
+          id="honeypot-email"
+          name="honeypot-email"
+          :value="honeypotEmail"
+          ref="honeypotjsEl"
+          aria-hidden="true"
+        />
+
       <button type="submit" name="newsletter" class="button">
         <span class="button-text-regular">{{ $t("mainSubmitRegular") }}</span>
         <span class="button-text-thin">{{ $t("mainSubmitThin") }}</span>
@@ -52,10 +67,16 @@
         showForm: false,
         formSent: false,
         showToast: false,
+        honeypotEmail: 'honeypot@honey.com',
       }
     },
     methods: {
       sendEmail() {
+        // catch bots
+        if (this.$refs.honeypotjsEl.value === this.honeypotEmail && !this.$refs.honeypotEmptyEl.value) {
+          return
+        }
+
         emailjs.sendForm(this.$config.emailJsServiceId, this.$config.emailJsTemplateId, this.$refs.form, this.$config.emailJsPublicKey)
           .then(() => {
               this.formSent = true;
