@@ -12,9 +12,7 @@ export default defineNuxtConfig({
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/assets/icons/favicon.svg' },
-    ],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.svg' }],
   },
   css: [
     // SCSS file in the project
