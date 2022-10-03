@@ -32,6 +32,8 @@ export default defineNuxtConfig({
     ],
     defaultLocale: 'en',
     vueI18n: {
+      legacy: false,
+      allowComposition: true,
       fallbackLocale: 'en',
       messages: {
         en: {
