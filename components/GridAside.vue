@@ -27,6 +27,12 @@
             <span>Jessica Portfolio</span>
           </a>
         </li>
+        <li>
+          <a href="https://aspect-ratio.dev/" target="_blank">
+            <span class="arrow">↳ </span>
+            <span>Aspect Ratio</span>
+          </a>
+        </li>
       </ul>
     </div>
 

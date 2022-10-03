@@ -85,7 +85,7 @@ export default defineNuxtConfig({
           mainTagline: 'Web-Design & Web-Entwicklung',
           mainHeadline: 'Wir gestalten & programmieren Webseiten',
           mainTextOne:
-            'Lassen Sie uns noch heute zusammenarbeiten, um eine fantastisch ',
+            'Lassen Sie uns noch heute zusammenarbeiten, um eine fantastische ',
           mainTextTwo: 'Website für Ihr Unternehmen ',
           mainTextThree: 'zu erstellen.',
           mainButtonRegular: 'in kontakt ',
