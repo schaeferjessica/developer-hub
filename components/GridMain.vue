@@ -12,21 +12,21 @@
     </a>
 
     <form action="#" class="from">
-      <label for="name" class="from__label">Hi, thanks for getting in touch! What's your name?</label>
+      <label for="name" class="from__label">{{ $t("mainLabelName") }}</label>
       <input placeholder="Jane Doe" name="name" type="text" id="name" class="from__input">
 
-      <label for="email" class="from__label">What email address can we reach you at? Only to get in touch, not to send spam!</label>
+      <label for="email" class="from__label">{{ $t("mainLabelEmail") }}</label>
       <input placeholder="janedoe@mail.com" name="email" type="text" id="email" class="from__input">
 
-      <label for="project" class="from__label">Tell us about your project, send us examples, links, or just think out loud.</label>
+      <label for="project" class="from__label">{{ $t("mainLabelProject") }}</label>
       <input type="text" id="project" name="project" class="from__input">
 
-      <label for="pages" class="from__label">How many pages are you looking to integrate into your website?</label>
+      <label for="pages" class="from__label">{{ $t("mainLabelPages") }}</label>
       <input type="text" id="pages" name="pages" class="from__input">
 
       <button type="submit" name="newsletter" class="button">
-        <span class="button-text-regular">get a </span>
-        <span class="button-text-thin">quote</span>
+        <span class="button-text-regular">{{ $t("mainSubmitRegular") }}</span>
+        <span class="button-text-thin">{{ $t("mainSubmitThin") }}</span>
       </button>
     </form> 
 

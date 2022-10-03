@@ -94,15 +94,20 @@ abbr {
   text-decoration: none;
 }
 
+label {
+  font-weight: 300;
+  font-size: calc( 0.8rem + 0.5vw);
+}
+
 input {
   font-family: 'IBM Plex Sans', 'Roboto', sans-serif;
-  font-weight: 200;
+  font-weight: 300;
   background-color: transparent;
   border: 1px solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(269.58deg, #C18050 42.69%, #8594FF 55.93%);
   padding: calc(0.5rem + 0.5vw);
-  font-size: calc(1rem + 0.5vw);
+  font-size: calc( 0.8rem + 0.5vw);
   outline: none;
   margin: 0;
   width: 100%;
@@ -111,7 +116,8 @@ input {
 
 input::placeholder {
   font-family: 'IBM Plex Sans', 'Roboto', sans-serif;
-  font-weight: 200;
+  font-weight: 300;
+  font-size: calc( 0.8rem + 0.5vw);
   color: var(--color-secondary);
   opacity: 0.5;
 }

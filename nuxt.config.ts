@@ -46,6 +46,12 @@ export default defineNuxtConfig({
           mainTextThree: 'for your business.',
           mainButtonRegular: 'get in ',
           mainButtonThin: 'touch',
+          mainLabelName: 'Hi, thanks for getting in touch! What is your name?',
+          mainLabelEmail: 'What email address can we reach you at? Only to get in touch, not to send spam!',
+          mainLabelProject: 'Tell us about your project, send us examples, links, or just think out loud.',
+          mainLabelPages: 'How many pages are you looking to integrate into your website?',
+          mainSubmitRegular: 'get a  ',
+          mainSubmitThin: 'quote',
         },
         de: {
           headerIntro: 'Hallo wir sind Selbstständige Web-Entwickler:in',
@@ -60,6 +66,12 @@ export default defineNuxtConfig({
           mainTextThree: 'zu erstellen.',
           mainButtonRegular: 'Kontaktieren ',
           mainButtonThin: 'Sie uns',
+          mainLabelName: 'Hallo, vielen Dank für Ihre Kontaktaufnahme! Wie ist Ihr Name?',
+          mainLabelEmail: 'Mit welcher E-Mail-Adresse können wir Sie erreichen? Nur um in Kontakt zu treten, nicht um Spam zu senden!',
+          mainLabelProject: 'Erzählen Sie uns von Ihrem Projekt, senden Sie uns Beispiele, Links oder denken Sie einfach laut.',
+          mainLabelPages: 'Wie viele Seiten möchten Sie in Ihre Website integrieren?',
+          mainSubmitRegular: 'Erhalten ',
+          mainSubmitThin: 'Sie ein Angebot',
         },
       }
     }
