@@ -21,6 +21,12 @@
             <span>Biscotti</span>
           </a>
         </li>
+        <li>
+          <a href="https://jessica.gatsbyjs.io/" target="_blank">
+            <span class="arrow">↳ </span>
+            <span>Jessica Portfolio</span>
+          </a>
+        </li>
       </ul>
     </div>
 
