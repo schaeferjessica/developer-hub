@@ -18,11 +18,12 @@
         <span class="button-text-regular">{{ $t("mainButtonBackRegular") }}</span>
         <span class="button-text-thin">{{ $t("mainButtonBackThin") }}</span>
       </button> -->
+
       <label for="name" class="from__label">{{ $t("mainLabelName") }}</label>
-      <input placeholder="Jane Doe" name="name" type="text" id="name" class="from__input">
+      <input :placeholder="$t('mainPlaceholderName')" name="name" type="text" id="name" class="from__input">
 
       <label for="email" class="from__label">{{ $t("mainLabelEmail") }}</label>
-      <input placeholder="janedoe@mail.com" name="email" type="text" id="email" class="from__input">
+      <input :placeholder="$t('mainPlaceholderEmail')" name="email" type="text" id="email" class="from__input">
 
       <label for="project" class="from__label">{{ $t("mainLabelProject") }}</label>
       <input type="text" id="project" name="project" class="from__input">
