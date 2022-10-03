@@ -1,7 +1,7 @@
 <template>
   <main class="grid__main">
-    <template v-if="!showForm">
-      <span class="tagline">{{ $t('mainTagline') }}</span>
+    <div class="main" v-if="!showForm">
+      <span class="main__tagline">{{ $t('mainTagline') }}</span>
       <header class="main__header">
         <h1 class="main__title">{{ $t('mainHeadline') }}</h1>
         <p class="main__text">
@@ -13,7 +13,7 @@
         <span class="button-text-regular">{{ $t('mainButtonRegular') }}</span>
         <span class="button-text-thin">{{ $t('mainButtonThin') }}</span>
       </button>
-    </template>
+    </div>
 
     <form
       action="#"
