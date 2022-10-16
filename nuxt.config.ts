@@ -49,7 +49,7 @@ export default defineNuxtConfig({
           asideTitleTwo: 'Contact:',
           asideTitleThree: 'Imprint:',
           asideImprint:
-            'Responsible for programming and journalistic-editorial content according to § 55 RStV developer:hub, USt-IdNr.: DE253194968 Würzburg, Germany',
+            'Responsible for programming and journalistic-editorial content: developer:hub, USt-IdNr.: DE253194968 Würzburg, Germany',
           // main
           mainTagline: 'Web-Design & Web-Development',
           mainHeadline: 'we design & program websites',
@@ -84,7 +84,7 @@ export default defineNuxtConfig({
           asideTitleTwo: 'Kontakt:',
           asideTitleThree: 'Impressum:',
           asideImprint:
-            'Verantwortlich für Programmierung und journalistisch-redaktionelle Inhalte nach § 55 RStV developer:hub, USt-IdNr.: DE253194968 Würzburg, Deutschland',
+            'Verantwortlich für Programmierung und journalistisch-redaktionelle Inhalte: developer:hub, USt-IdNr.: DE253194968 Würzburg, Deutschland',
           // main
           mainTagline: 'Web-Design & Web-Entwicklung',
           mainHeadline: 'Wir gestalten & programmieren Webseiten',

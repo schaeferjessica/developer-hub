@@ -61,11 +61,11 @@
       <h2>{{ $t('asideTitleThree') }}</h2>
       <address class="address">
         <a href="mailto:hello@developerhub.tech" class="address__link">
-          <span>hello@developerhub.tech </span>
+          <span>mail: hello@developerhub.tech </span>
         </a>
-        <a href="tel:+176 22622962" class="address__link">
+        <!-- <a href="tel:+176 22622962" class="address__link">
           <span>0176 22622962</span>
-        </a>
+        </a> -->
       </address>
       <p class="imprint__text">{{ $t('asideImprint') }}</p>
     </div>
