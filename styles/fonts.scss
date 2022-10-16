@@ -70,6 +70,7 @@
   font-family: 'Space Grotesk';
   font-style: normal;
   font-weight: 300;
+  font-display: swap;
   src: local(''),
        url('@/assets/fonts/space-grotesk-v13-latin-300.woff2') format('woff2'),
        url('@/assets/fonts/space-grotesk-v13-latin-300.woff') format('woff');
@@ -80,6 +81,7 @@
   font-family: 'Space Grotesk';
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: local(''),
        url('@/assets/fonts/space-grotesk-v13-latin-regular.woff2') format('woff2'),
        url('@/assets/fonts/space-grotesk-v13-latin-regular.woff') format('woff');
