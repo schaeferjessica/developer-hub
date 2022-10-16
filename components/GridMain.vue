@@ -1,6 +1,10 @@
 <template>
   <main class="grid__main">
-    <div class="main" v-if="!showForm">
+    <div
+      class="main"
+      :class="{ 'main--active': startAnimation }"
+      v-if="!showForm"
+    >
       <span class="main__tagline">{{ $t('mainTagline') }}</span>
       <header class="main__header">
         <h1 class="main__title">{{ $t('mainHeadline') }}</h1>
@@ -43,6 +47,7 @@
         type="text"
         id="email"
         class="from__input"
+        required
       />
 
       <label for="project" class="from__label">{{
@@ -105,7 +110,13 @@ export default {
       formSent: false,
       showToast: false,
       honeypotEmail: 'honeypot@honey.com',
+      animation: false,
     };
+  },
+  computed: {
+    startAnimation() {
+      return this.animation || !this.showForm;
+    },
   },
   methods: {
     sendEmail() {
@@ -145,6 +156,9 @@ export default {
           }
         );
     },
+  },
+  mounted() {
+    this.animation = true;
   },
 };
 </script>

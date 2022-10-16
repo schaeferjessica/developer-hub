@@ -62,7 +62,7 @@ export default defineNuxtConfig({
           formLabelName: 'Hi, thanks for getting in touch! What is your name?',
           formPlaceholderName: 'Jane Doe',
           formLabelEmail:
-            'What email address can we reach you at? Only to get in touch, not to send spam!',
+            'What email address can we reach you at?* Only to get in touch, not to send spam!',
           formPlaceholderEmail: "janedoe{'@'}mail.com",
           formLabelProject:
             'Tell us about your project, send us examples, links, or just think out loud.',
@@ -99,7 +99,7 @@ export default defineNuxtConfig({
             'Hallo, vielen Dank für Ihre Kontaktaufnahme! Wie ist Ihr Name?',
           formPlaceholderName: 'Erika Mustermann',
           formLabelEmail:
-            'Mit welcher E-Mail-Adresse können wir Sie erreichen? Nur um in Kontakt zu treten, nicht um Spam zu senden!',
+            'Mit welcher E-Mail-Adresse können wir Sie erreichen?* Nur um in Kontakt zu treten, nicht um Spam zu senden!',
           formPlaceholderEmail: "erikamustermann{'@'}mail.com",
           formLabelProject:
             'Erzählen Sie uns von Ihrem Projekt, senden Sie uns Beispiele, Links oder denken Sie einfach laut.',

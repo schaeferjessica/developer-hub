@@ -31,12 +31,14 @@
   justify-content: center;
   align-items: flex-start;
   height: 100%;
+  opacity: 0;
+  transform: translateY(100px);
+}
 
+.main--active {
   animation-name: fade-in;
   animation-duration: 2.5s;
   animation-fill-mode: forwards;
-  opacity: 0;
-  transform: translateY(100px);
 }
 
 .main__tagline {
@@ -124,6 +126,7 @@
 @keyframes fade-in {
   0% {
     transform: translateY(100px);
+    opacity: 0;
   }
 
   100% {
