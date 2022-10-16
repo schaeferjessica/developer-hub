@@ -22,6 +22,7 @@
 .grid__main { grid-area: main; }
 
 .grid__header {
+  position: relative;
   display: flex;
   gap: 1rem;
   flex-direction: column;
@@ -33,11 +34,55 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    border: none;
   }  
+}
+
+.grid__header::before {
+  @media (min-width: 800px) {
+    content: '';
+    animation-name: move-sideway;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    width: 0;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+    background-color: var(--color-primary);
+  }
+}
+
+.grid__header::after {
+  @media (min-width: 800px) {
+    content: '';
+    animation-name: move-sideway;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    width: 0;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    right: 65%;
+    background-color: var(--color-primary);
+  }
 }
 
 .language-switch {
   display: flex;
   gap: calc(0.1rem + 0.5vw);
   align-items: flex-start;
+}
+
+
+@keyframes move-sideway {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
 }
