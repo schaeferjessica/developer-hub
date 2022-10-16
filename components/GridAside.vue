@@ -3,12 +3,12 @@
     <div class="references">
       <h2>{{ $t('asideTitleOne') }}</h2>
       <ul>
-        <li>
+        <!-- <li>
           <a href="#" target="_blank">
             <span class="arrow">↳ </span>
             <span>Al Halqa</span>
           </a>
-        </li>
+        </li> -->
         <li>
           <a href="https://ristorante-umbria.de/" target="_blank">
             <span class="arrow">↳ </span>
