@@ -43,7 +43,7 @@ export default defineNuxtConfig({
       messages: {
         en: {
           // header
-          headerIntro: 'Hello, we are freelance web-developer',
+          headerIntro: 'Hola, we are developer:hub',
           // aside
           asideTitleOne: 'References:',
           asideTitleTwo: 'Contact:',
@@ -78,7 +78,7 @@ export default defineNuxtConfig({
         },
         de: {
           // header
-          headerIntro: 'Hallo wir sind Selbstständige Web-Entwickler:in',
+          headerIntro: 'Hola, wir sind developer:hub',
           // aside
           asideTitleOne: 'Referenzen:',
           asideTitleTwo: 'Kontakt:',
