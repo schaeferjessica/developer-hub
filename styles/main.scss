@@ -14,7 +14,7 @@
   @media (min-width: 800px) {
     content: '';
     animation-name: move-up;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
     width: 1px;
     height: 0;
@@ -43,25 +43,25 @@
 
 .main__tagline {
   @include font-size--small;
-  
+
   text-transform: uppercase;
 }
 
 .main__header {
   width: 100%;
- 
+
   @media (min-width: 800px) {
-    margin-right: calc( 1rem + 0.5vw);
+    margin-right: calc(1rem + 0.5vw);
   }
 }
 
 .main__title {
-  margin-top: calc( 0.5rem + 0.5vw);
+  margin-top: calc(0.5rem + 0.5vw);
 }
 
 .main__text {
-  font-size: calc( 1.5rem + 0.5vw);
-  margin-top: calc( 1.2rem + 0.5vw);
+  font-size: calc(1.5rem + 0.5vw);
+  margin-top: calc(1.2rem + 0.5vw);
 }
 
 .button {
@@ -125,7 +125,7 @@
 
 @keyframes fade-in {
   0% {
-    transform: translateY(100px);
+    transform: translateY(50px);
     opacity: 0;
   }
 
