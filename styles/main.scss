@@ -14,7 +14,7 @@
   @media (min-width: 800px) {
     content: '';
     animation-name: move-up;
-    animation-duration: 0.5s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
     width: 1px;
     height: 0;
@@ -36,9 +36,11 @@
 }
 
 .main--active {
-  animation-name: fade-in;
-  animation-duration: 2.5s;
-  animation-fill-mode: forwards;
+  @media (min-width: 800px) {
+    animation-name: fade-in;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
 }
 
 .main__tagline {
@@ -125,7 +127,7 @@
 
 @keyframes fade-in {
   0% {
-    transform: translateY(50px);
+    transform: translateY(100px);
     opacity: 0;
   }
 
