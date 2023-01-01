@@ -3,11 +3,15 @@
     <h2>{{ $t('worksH2') }}</h2>
     <ul class="works__grid">
       <li class="works__item">
-        <a href="" class="works__item-inner" target="_blank">
+        <a
+          href="https://www.alhalqa-virtual.com/"
+          class="works__item-inner"
+          target="_blank"
+        >
           <div class="works__image">
             <img src="/assets/images/works-1.png" alt="" />
           </div>
-          <span>Al Halqa</span>
+          <span>Al Halqa *coming soon*</span>
         </a>
       </li>
 
