@@ -75,6 +75,20 @@ export default defineNuxtConfig({
 
           mainButtonBackRegular: 'take me  ',
           mainButtonBackThin: 'back',
+          //
+          // NEW
+          //
+          // intro
+          intro: 'we design & program websites',
+          // about
+          aboutP:
+            'Let us work together today to create an awesome website for your business.',
+          aboutH2: 'Hola, wir sind developer:hub',
+          // works
+          works: 'selected references:',
+          // imprint
+          imprintH2: 'imprint',
+          imprintP: 'developer:hub, Tax ID: DE253194968 Würzburg, Germany',
         },
         de: {
           // header
@@ -112,6 +126,21 @@ export default defineNuxtConfig({
 
           mainButtonBackRegular: 'zurück ',
           mainButtonBackThin: 'bitte',
+          //
+          // NEW
+          //
+          // intro
+          intro: 'Wir gestalten & programmieren Webseiten',
+          // about
+          aboutP:
+            'Lassen Sie uns noch heute zusammenarbeiten, um eine fantastische Website für Ihr Unternehmen zu erstellen.',
+          aboutH2: 'Hola, we are developer:hub',
+          // works
+          works: 'ausgewählte Referenzen:',
+          // imprint
+          imprintH2: 'Impressum',
+          imprintP:
+            'developer:hub, USt-IdNr.: DE253194968 Würzburg, Deutschland',
         },
       },
     },

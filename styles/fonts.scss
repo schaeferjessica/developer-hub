@@ -1,3 +1,23 @@
+/* Playfair Display */
+@font-face {
+  font-family: 'Playfair';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(''),
+       url('@/assets/fonts/PlayfairDisplay.woff') format('woff');
+}
+
+/* Playfair Display - italic */
+@font-face {
+  font-family: 'Playfair';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local(''),
+       url('@/assets/fonts/PlayfairDisplayItalic.woff') format('woff');
+}
+
 /* ibm-plex-sans-200 - latin */
 @font-face {
   font-family: 'IBM Plex Sans';
