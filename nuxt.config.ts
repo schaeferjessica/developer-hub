@@ -138,7 +138,7 @@ export default defineNuxtConfig({
           // about
           aboutTitle: 'Create with us.',
           aboutP:
-            'Lassen Sie uns noch heute zusammenarbeiten, um eine fantastische Website für Ihr Unternehmen zu erstellen.',
+            'Lassen Sie uns noch heute zusammenarbeiten, um eine fantastische Webseite für Ihr Unternehmen zu erstellen.',
           aboutH2: 'Hola, wir sind developer:hub',
           aboutText:
             'Wir sind Web-Designer*innen & Web-Entwikler*innen. Finde uns auf',

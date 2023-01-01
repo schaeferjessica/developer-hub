@@ -9,7 +9,7 @@
           target="_blank"
         >
           <div class="works__image">
-            <img src="/assets/images/works-1.png" alt="" />
+            <img src="/assets/images/works-1.webp" alt="" loading="lazy" />
           </div>
           <span>Al Halqa *coming soon*</span>
         </a>
@@ -22,7 +22,7 @@
           target="_blank"
         >
           <div class="works__image">
-            <img src="/assets/images/works-2.jpg" alt="" />
+            <img src="/assets/images/works-2.webp" alt="" loading="lazy" />
           </div>
           <span>Feinkost Umbria</span>
         </a>
@@ -35,7 +35,7 @@
           target="_blank"
         >
           <div class="works__image">
-            <img src="/assets/images/works-3.jpg" alt="" />
+            <img src="/assets/images/works-3.webp" alt="" loading="lazy" />
           </div>
           <span>Biscotti</span>
         </a>
