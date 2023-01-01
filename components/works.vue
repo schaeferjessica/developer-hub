@@ -1,6 +1,6 @@
 <template>
   <div class="works">
-    <h2>Ausgewählte Referenzen:</h2>
+    <h2>{{ $t('worksH2') }}</h2>
     <ul class="works__grid">
       <li class="works__item">
         <a href="" class="works__item-inner" target="_blank">
@@ -43,6 +43,8 @@
 <script></script>
 
 <style lang="scss">
+@use '/styles/generics' as *;
+
 .works__grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -53,6 +55,9 @@
   justify-content: flex-end;
 }
 .works__item-inner {
+  @include font-size--small;
+
+  font-style: italic;
   max-width: 70vw;
   display: block;
 }

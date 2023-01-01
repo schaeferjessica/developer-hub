@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <h2>Create with us.</h2>
+    <h2>{{ $t('aboutTitle') }}</h2>
     <p>
       {{ $t('aboutP') }}
       <a href="mailto:hello@developerhub.tech">hello@developerhub.tech</a>
@@ -8,11 +8,11 @@
 
     <h2>{{ $t('aboutH2') }}</h2>
     <p class="about__text">
-      Wir sind Web-Designer*innen & Web-Entwikler*innen find us on
+      {{ $t('aboutText') }}
       <a href="https://www.instagram.com/developerhub.tech/" target="_blank"
         ><span>Instagram</span></a
       >
-      or find us on linkedIn
+      {{ $t('aboutText2') }}
       <a href="https://www.linkedin.com/in/nkosakul/" target="_blank">
         <span>Nat Kosakul </span>
       </a>

@@ -81,11 +81,15 @@ export default defineNuxtConfig({
           // intro
           intro: 'we design & program websites',
           // about
+          aboutTitle: 'Create with us.',
           aboutP:
             'Let us work together today to create an awesome website for your business.',
-          aboutH2: 'Hola, wir sind developer:hub',
+          aboutH2: 'Hola, we are developer:hub',
+          aboutText:
+            'We are a small team of web designers and developers. Find us on',
+          aboutText2: 'or LinkedIn',
           // works
-          works: 'selected references:',
+          worksH2: 'selected references:',
           // imprint
           imprintH2: 'imprint',
           imprintP: 'developer:hub, Tax ID: DE253194968 Würzburg, Germany',
@@ -132,11 +136,15 @@ export default defineNuxtConfig({
           // intro
           intro: 'Wir gestalten & programmieren Webseiten',
           // about
+          aboutTitle: 'Create with us.',
           aboutP:
             'Lassen Sie uns noch heute zusammenarbeiten, um eine fantastische Website für Ihr Unternehmen zu erstellen.',
-          aboutH2: 'Hola, we are developer:hub',
+          aboutH2: 'Hola, wir sind developer:hub',
+          aboutText:
+            'Wir sind Web-Designer*innen & Web-Entwikler*innen. Finde uns auf',
+          aboutText2: 'oder auf LinkedIn',
           // works
-          works: 'ausgewählte Referenzen:',
+          worksH2: 'ausgewählte Referenzen:',
           // imprint
           imprintH2: 'Impressum',
           imprintP:
