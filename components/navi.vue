@@ -33,7 +33,7 @@ export default {
 }
 
 .navi__language-switch > a {
-  border-bottom: none;
+  text-decoration: none;
   font-style: italic;
 }
 </style>

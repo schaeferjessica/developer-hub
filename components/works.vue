@@ -12,33 +12,29 @@
       </li>
 
       <li class="works__item">
-        <div class="works__item-inner">
-          <a
-            href="https://ristorante-umbria.de/"
-            class="works__item-inner"
-            target="_blank"
-          >
-            <div class="works__image">
-              <img src="/assets/images/works-2.jpg" alt="" />
-            </div>
-            <span>Feinkost Umbria</span>
-          </a>
-        </div>
+        <a
+          href="https://ristorante-umbria.de/"
+          class="works__item-inner"
+          target="_blank"
+        >
+          <div class="works__image">
+            <img src="/assets/images/works-2.jpg" alt="" />
+          </div>
+          <span>Feinkost Umbria</span>
+        </a>
       </li>
 
       <li class="works__item">
-        <div class="works__item-inner">
-          <a
-            href="https://biscotti.netlify.app/ "
-            class="works__item-inner"
-            target="_blank"
-          >
-            <div class="works__image">
-              <img src="/assets/images/works-3.jpg" alt="" />
-            </div>
-            <span>Biscotti</span>
-          </a>
-        </div>
+        <a
+          href="https://biscotti.netlify.app/ "
+          class="works__item-inner"
+          target="_blank"
+        >
+          <div class="works__image">
+            <img src="/assets/images/works-3.jpg" alt="" />
+          </div>
+          <span>Biscotti</span>
+        </a>
       </li>
     </ul>
   </div>
@@ -58,5 +54,6 @@
 }
 .works__item-inner {
   max-width: 70vw;
+  display: block;
 }
 </style>

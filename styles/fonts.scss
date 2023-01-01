@@ -1,21 +1,11 @@
-/* Playfair Display */
+/* Romie-Regular */
 @font-face {
-  font-family: 'Playfair';
+  font-family: 'Romie-Regular';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
   src: local(''),
-       url('@/assets/fonts/PlayfairDisplay.woff') format('woff');
-}
-
-/* Playfair Display - italic */
-@font-face {
-  font-family: 'Playfair';
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: local(''),
-       url('@/assets/fonts/PlayfairDisplayItalic.woff') format('woff');
+       url('@/assets/fonts/Romie-Regular.woff2') format('woff');
 }
 
 /* ibm-plex-sans-200 - latin */

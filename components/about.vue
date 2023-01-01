@@ -3,7 +3,7 @@
     <h2>Create with us.</h2>
     <p>
       {{ $t('aboutP') }}
-      <a href="">hello@developerhub.tech</a>
+      <a href="mailto:hello@developerhub.tech">hello@developerhub.tech</a>
     </p>
 
     <h2>{{ $t('aboutH2') }}</h2>

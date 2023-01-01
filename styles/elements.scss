@@ -58,11 +58,9 @@ a,
 button {
   @include font-size--medium;
 
-  border-bottom: 0.1rem solid var(--color-text);
+  text-decoration: var(--color-text) solid underline;
   color: var(--color-text);
   cursor: pointer;
-  text-decoration: none;
-
 }
 
 a:visited {
@@ -88,7 +86,8 @@ a:hover,
 button:hover,
 a:focus-visible,
 button:focus-visible {
-  border-bottom: 0rem solid var(--color-text);
+  //text-decoration: none;
+  //font-style: italic;
 }
 
 
@@ -182,7 +181,7 @@ img {
 
 h1,
 h2 {
-  font-family: 'Playfair', serif;
+  font-family: 'Romie-Regular', serif;
   font-style: italic;
   width: calc(70% + 5vw);
 }
